@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --canvas-bg: #FAF8F5;
+    --canvas-alt: #F4EFEB;
+    --canvas-card: #FFFFFF;
+    --ink-primary: #14121E;
+    --ink-secondary: #534B73;
+    --ink-muted: #8C85A3;
+    --violet-brand: #7C6EAD;
+    --sage-accent: #4D967A;
+    --blush-warm: #E06547;
+    --border-subtle: rgba(20, 18, 30, 0.07);
+    --border-medium: rgba(124, 110, 173, 0.15);
+  }
+
+  body {
+    background-color: var(--canvas-bg);
+    color: var(--ink-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #EDE9F7;
+    color: #4F3F82;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CEBFE6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7C6EAD;
+}
+
+/* Subtle dot matrix — warm lilac */
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(124, 110, 173, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Fine linen grid lines */
+.bg-linen-grid {
+  background-size: 44px 44px;
+  background-image:
+    linear-gradient(to right, rgba(124, 110, 173, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(124, 110, 173, 0.06) 1px, transparent 1px);
+}
+
+/* Luxury pastel card glass */
+.glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(20, 18, 30, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(124, 110, 173, 0.22);
+  box-shadow: 0 20px 48px -12px rgba(124, 110, 173, 0.14), 0 4px 12px -2px rgba(20, 18, 30, 0.04);
+  transform: translateY(-2px);
+}
+
+/* Marquee hover pause */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Section Divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(124, 110, 173, 0.18) 20%, rgba(124, 110, 173, 0.18) 80%, transparent);
+}
+
+/* Text highlight gradient */
+.gradient-text-violet {
+  background: linear-gradient(135deg, #7C6EAD 0%, #AB96D4 60%, #7C6EAD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-sage {
+  background: linear-gradient(135deg, #3A7D63 0%, #4D967A 60%, #7FB69F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 3D tilt card effect */
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform;
+}
+
+/* Floating pastel blobs */
+.blob-violet {
+  background: radial-gradient(ellipse, rgba(202, 190, 230, 0.4) 0%, rgba(202, 190, 230, 0) 70%);
+  filter: blur(40px);
+}
+
+.blob-sage {
+  background: radial-gradient(ellipse, rgba(178, 213, 197, 0.38) 0%, rgba(178, 213, 197, 0) 70%);
+  filter: blur(40px);
+}
+
+.blob-blush {
+  background: radial-gradient(ellipse, rgba(253, 208, 196, 0.36) 0%, rgba(253, 208, 196, 0) 70%);
+  filter: blur(44px);
+}
+
+.blob-honey {
+  background: radial-gradient(ellipse, rgba(253, 220, 150, 0.32) 0%, rgba(253, 220, 150, 0) 70%);
+  filter: blur(48px);
+}
+
+/* Mentor card shine effect */
+.mentor-card-shine::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -80%;
+  width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: skewX(-12deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+.mentor-card-shine:hover::before {
+  left: 120%;
+}
+
+/* Premium button */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px -8px rgba(124, 110, 173, 0.40);
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
