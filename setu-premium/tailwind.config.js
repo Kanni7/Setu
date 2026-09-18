@@ -106,6 +106,7 @@ export default {
         'float-reverse': 'floatReverse 8s ease-in-out infinite',
         'pulse-subtle': 'pulseSlow 5s ease-in-out infinite',
         'spin-slow': 'spin 30s linear infinite',
+        'blob-spin': 'spin 6s linear infinite',
         'marquee': 'marquee 40s linear infinite',
         'marquee-reverse': 'marqueeReverse 40s linear infinite',
       },
