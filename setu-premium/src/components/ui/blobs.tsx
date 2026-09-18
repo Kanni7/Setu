@@ -3,23 +3,23 @@ import { cn } from "@/lib/utils";
 
 const BLOBS = [
   {
-    backgroundColor: "#0074D9",
-    backgroundImage: "linear-gradient(#0074D9, #39CCCC, #0074D9)",
+    backgroundColor: "#B84A3A",
+    backgroundImage: "linear-gradient(#B84A3A, #E07A5F, #B84A3A)",
     transform: "rotate(30deg) scale(1.03)",
   },
   {
-    backgroundColor: "#FF4136",
-    backgroundImage: "linear-gradient(#FF4136, #FF851B, #FF4136)",
+    backgroundColor: "#E07A5F",
+    backgroundImage: "linear-gradient(#E07A5F, #F2C6A0, #E07A5F)",
     transform: "rotate(60deg) scale(0.95)",
   },
   {
-    backgroundColor: "#3D9970",
-    backgroundImage: "linear-gradient(#3D9970, #01FF70, #3D9970)",
+    backgroundColor: "#7A332B",
+    backgroundImage: "linear-gradient(#7A332B, #B84A3A, #7A332B)",
     transform: "rotate(90deg) scale(0.97)",
   },
   {
-    backgroundColor: "#B10DC9",
-    backgroundImage: "linear-gradient(#B10DC9, #85144B, #B10DC9)",
+    backgroundColor: "#F2C6A0",
+    backgroundImage: "linear-gradient(#F2C6A0, #B84A3A, #F2C6A0)",
     transform: "rotate(120deg) scale(1.02)",
   },
 ];

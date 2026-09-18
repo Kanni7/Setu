@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 export default function AmbientBackground() {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-      {/* Warm Alabaster Base Layer */}
-      <div className="absolute inset-0 bg-[#FAF8F5]" />
+      {/* Warm Sunset Base Layer */}
+      <div className="absolute inset-0 bg-[#FFF3E7]" />
 
       {/* Very Fine Linen Grid Texture */}
       <div className="absolute inset-0 bg-linen-grid opacity-60" />

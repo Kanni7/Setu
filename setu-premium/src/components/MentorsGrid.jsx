@@ -181,12 +181,12 @@ export default function MentorsGrid() {
   // Mapping accents to specific premium solid colors inspired by the design
   const getCardBg = (accent) => {
     switch(accent) {
-      case 'violet': return 'bg-[#9684A8]';
-      case 'sage': return 'bg-[#AEB775]';
-      case 'sky': return 'bg-[#8799B7]';
-      case 'honey': return 'bg-[#E5B567]';
-      case 'blush': return 'bg-[#C68585]';
-      default: return 'bg-[#9684A8]';
+      case 'violet': return 'bg-[#B84A3A]';
+      case 'sage': return 'bg-[#8C6653]';
+      case 'sky': return 'bg-[#7D6F63]';
+      case 'honey': return 'bg-[#C9814C]';
+      case 'blush': return 'bg-[#E07A5F]';
+      default: return 'bg-[#B84A3A]';
     }
   };
 

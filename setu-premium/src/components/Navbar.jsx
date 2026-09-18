@@ -32,14 +32,14 @@ export default function Navbar() {
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled
-            ? 'py-3.5 bg-[#FAF8F5]/90 backdrop-blur-xl border-b border-[#14121E]/[0.08] shadow-[0_10px_30px_-10px_rgba(124,110,173,0.08)]'
+            ? 'py-3.5 bg-[#FFF3E7]/90 backdrop-blur-xl border-b border-[#242A32]/[0.08] shadow-[0_10px_30px_-10px_rgba(184,74,58,0.08)]'
             : 'py-5 bg-transparent border-b border-transparent'
         }`}
       >
         <div className="max-w-[1400px] w-full mx-auto px-6 sm:px-8 flex items-center justify-between">
           {/* Brand Logo & Tag */}
           <a href="#" className="flex items-center gap-3.5 group shrink-0">
-            <div className="relative w-10 h-10 rounded-xl overflow-hidden p-0.5 bg-white border border-[#14121E]/10 shadow-sm group-hover:border-violet-500/50 transition-colors">
+            <div className="relative w-10 h-10 rounded-xl overflow-hidden p-0.5 bg-white border border-[#242A32]/10 shadow-sm group-hover:border-violet-500/50 transition-colors">
               <img
                 src="/images/logo.png"
                 alt="Setu Logo"
@@ -98,7 +98,7 @@ export default function Navbar() {
 
             <a
               href="#apply"
-              className="relative inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-white bg-violet-600 hover:bg-violet-700 shadow-[0_4px_16px_-2px_rgba(124,110,173,0.40)] transition-all active:scale-[0.98]"
+              className="relative inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-white bg-violet-600 hover:bg-violet-700 shadow-[0_4px_16px_-2px_rgba(184,74,58,0.40)] transition-all active:scale-[0.98]"
             >
               <Sparkles className="w-3.5 h-3.5 mr-1.5 text-violet-200" />
               <span>APPLY NOW</span>
@@ -125,7 +125,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-x-0 top-[68px] z-40 bg-[#FAF8F5]/98 backdrop-blur-2xl border-b border-ink-900/10 p-6 lg:hidden shadow-xl"
+            className="fixed inset-x-0 top-[68px] z-40 bg-[#FFF3E7]/98 backdrop-blur-2xl border-b border-ink-900/10 p-6 lg:hidden shadow-xl"
           >
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-sage-50 border border-sage-200 text-xs font-mono font-medium text-sage-700 w-fit mb-2">
