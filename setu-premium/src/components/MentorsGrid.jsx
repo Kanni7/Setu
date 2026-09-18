@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, ArrowRight, UserCheck, Sparkles, ExternalLink, X } from 'lucide-react';
+import MentorMarquee from './MentorMarquee';
 
 const LinkedInIcon = ({ className = "w-3.5 h-3.5" }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24">
@@ -177,22 +178,28 @@ export default function MentorsGrid() {
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sage-100 border border-sage-200 text-sage-800 text-xs font-mono font-bold mb-4 shadow-xs">
-              <Sparkles className="w-3.5 h-3.5 text-sage-600" />
-              <span>LEARN FROM ACTIVE OPERATORS</span>
-            </div>
-
-            <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-ink-900 tracking-tight">
-              Get Mentored by Industry Titans.
-            </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-2xl mb-12"
+        >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sage-100 border border-sage-200 text-sage-800 text-xs font-mono font-bold mb-4 shadow-xs">
+            <Sparkles className="w-3.5 h-3.5 text-sage-600" />
+            <span>LEARN FROM ACTIVE OPERATORS</span>
           </div>
 
-          <p className="text-sm font-sans text-ink-500 max-w-md leading-relaxed">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-ink-900 tracking-tight leading-[1.08]">
+            Get <span className="underline-squiggle text-violet-600">Mentored</span> by Industry Titans.
+          </h2>
+
+          <p className="text-sm font-sans text-ink-500 max-w-md leading-relaxed mt-5">
             No retired theorists. Only active founders, chief architects, and seasoned venture builders who dissect your execution in confidential 1:1 war rooms.
           </p>
-        </div>
+        </motion.div>
+
+        <MentorMarquee mentors={mentorsList} />
 
         {/* Domain Filters */}
         <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-10 scrollbar-none">

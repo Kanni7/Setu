@@ -87,9 +87,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
-        display: ['Syne', 'Plus Jakarta Sans', 'sans-serif'],
-        serif: ['Newsreader', 'Georgia', 'serif'],
+        sans: ['Shantell Sans', 'ui-sans-serif', 'sans-serif'],
+        display: ['Shantell Sans', 'ui-sans-serif', 'sans-serif'],
+        serif: ['Shantell Sans', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'Space Grotesk', 'monospace'],
       },
       boxShadow: {
