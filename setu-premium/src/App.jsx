@@ -42,7 +42,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-[#FAF8F5] min-h-screen text-[#14121E] font-sans antialiased selection:bg-violet-200 selection:text-violet-900 overflow-x-clip relative">
+    <div className="bg-[#FFF3E7] min-h-screen text-[#242A32] font-sans antialiased selection:bg-violet-200 selection:text-violet-900 overflow-x-clip relative">
       <IntroSplash />
       <AmbientBackground />
       <CommandMenu />

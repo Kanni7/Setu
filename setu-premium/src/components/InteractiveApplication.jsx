@@ -40,7 +40,7 @@ export default function InteractiveApplication() {
         particleCount: 100,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ['#7C6EAD', '#4D967A', '#E06547', '#FBD98F', '#AB96D4']
+        colors: ['#B84A3A', '#E07A5F', '#F2C6A0', '#7A332B', '#C9814C']
       });
     }, 700);
   };

@@ -43,7 +43,7 @@ function InteractiveFounderBoard() {
       <div className="absolute -inset-4 bg-gradient-to-tr from-violet-200/50 via-sage-200/40 to-blush-200/50 rounded-3xl blur-2xl opacity-70 -z-10" />
 
       {/* Main Glassmorphic War Room Board */}
-      <div className="relative rounded-3xl bg-white/90 backdrop-blur-2xl border border-ink-900/[0.08] p-6 sm:p-7 shadow-[0_20px_50px_-12px_rgba(124,110,173,0.18)]">
+      <div className="relative rounded-3xl bg-white/90 backdrop-blur-2xl border border-ink-900/[0.08] p-6 sm:p-7 shadow-[0_20px_50px_-12px_rgba(184,74,58,0.18)]">
 
         {/* Board Top Bar */}
         <div className="flex items-center justify-between pb-4 mb-5 border-b border-ink-900/[0.06]">

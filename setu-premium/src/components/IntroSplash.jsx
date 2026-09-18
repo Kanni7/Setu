@@ -28,6 +28,16 @@ export default function IntroSplash() {
           >
             <AnimatedBlobs />
           </motion.div>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="absolute inset-x-0 text-center px-6 font-display font-semibold text-white/80 text-lg sm:text-xl md:text-2xl tracking-tight"
+            style={{ top: 'calc(50% + 36vmin)' }}
+          >
+            Hai Keeda? Hai Himmat? To Kar Startup!
+          </motion.p>
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
