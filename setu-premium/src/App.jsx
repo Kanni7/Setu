@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 
+import IntroSplash from './components/IntroSplash';
 import AmbientBackground from './components/AmbientBackground';
 import CommandMenu from './components/CommandMenu';
 import Navbar from './components/Navbar';
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <div className="bg-[#FAF8F5] min-h-screen text-[#14121E] font-sans antialiased selection:bg-violet-200 selection:text-violet-900 overflow-x-clip relative">
+      <IntroSplash />
       <AmbientBackground />
       <CommandMenu />
       <Navbar />
