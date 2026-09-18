@@ -174,7 +174,7 @@ export default function MentorsGrid() {
     if (isHovered) return;
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % mentorsList.length);
-    }, 2000);
+    }, 1750);
     return () => clearInterval(timer);
   }, [isHovered]);
 

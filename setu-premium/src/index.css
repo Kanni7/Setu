@@ -214,3 +214,35 @@ img {
   background-size: 100% 100%;
   z-index: -1;
 }
+
+/* Animated Blobs */
+.blob-shape {
+  --border-radius: 115% 140% 145% 110% / 125% 140% 110% 125%;
+  --border-width: 5vmin;
+  aspect-ratio: 1;
+  display: block;
+  grid-area: stack;
+  background-size: calc(100% + var(--border-width) * 2);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: var(--border-width) solid transparent;
+  border-radius: var(--border-radius);
+  mask-image: linear-gradient(transparent, transparent), linear-gradient(black, white);
+  -webkit-mask-image: linear-gradient(transparent, transparent), linear-gradient(black, white);
+  mask-clip: padding-box, border-box;
+  -webkit-mask-clip: padding-box, border-box;
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+  mix-blend-mode: screen;
+  height: 70vmin;
+  filter: blur(1vmin);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
