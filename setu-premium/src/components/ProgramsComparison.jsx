@@ -56,8 +56,8 @@ export default function ProgramsComparison() {
         "Lifetime access to Setu Alumni Operator Network"
       ],
       accent: "violet",
-      bgClass: "bg-violet-50/70 border-violet-200 text-violet-900 shadow-pastel-md",
-      badgeClass: "bg-violet-100 text-violet-800 border-violet-200",
+      bgClass: "bg-violet-100 text-violet-900",
+      badgeClass: "bg-violet-200 text-violet-900 border-ink-900",
       cta: "Show Interest for 3-Day Spark"
     },
     {
@@ -105,20 +105,20 @@ export default function ProgramsComparison() {
         "Private Demo Day with leading Indian seed funds"
       ],
       accent: "sage",
-      bgClass: "bg-sage-50/70 border-sage-200 text-sage-900 shadow-pastel-md",
-      badgeClass: "bg-sage-100 text-sage-800 border-sage-200",
+      bgClass: "bg-sage-100 text-sage-900",
+      badgeClass: "bg-sage-200 text-sage-900 border-ink-900",
       cta: "Show Interest for 30-Day Immersion"
     }
   ];
 
   return (
-    <section id="programs" className="py-28 px-6 bg-canvas-100 relative border-t border-ink-900/[0.06]">
+    <section id="programs" className="py-28 px-6 bg-canvas-100 relative border-t-[3px] border-ink-900">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-honey-100 border border-honey-200 text-honey-900 text-xs font-mono font-bold mb-4 shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-honey-100 border-2 border-ink-900 text-honey-900 text-xs font-mono font-bold mb-4">
               <Flame className="w-3.5 h-3.5 text-honey-700" />
               <span>FOR ALL THOSE WHO HAVE KEEDA AND HIMMAT</span>
             </div>
@@ -128,12 +128,12 @@ export default function ProgramsComparison() {
             </h2>
           </div>
 
-          <div className="flex items-center gap-2 p-1 rounded-xl bg-canvas-200 border border-ink-900/[0.06] self-start md:self-auto">
+          <div className="flex items-center gap-2 p-1 rounded-xl bg-canvas-200 border-2 border-ink-900 self-start md:self-auto">
             <button
               onClick={() => setViewMode('cards')}
               className={`px-4 py-2 rounded-lg text-xs font-mono font-bold transition-all ${
                 viewMode === 'cards'
-                  ? 'bg-white text-violet-700 shadow-sm'
+                  ? 'bg-honey-400 text-ink-900 border-2 border-ink-900'
                   : 'text-ink-500 hover:text-ink-800'
               }`}
             >
@@ -143,7 +143,7 @@ export default function ProgramsComparison() {
               onClick={() => setViewMode('timeline')}
               className={`px-4 py-2 rounded-lg text-xs font-mono font-bold transition-all ${
                 viewMode === 'timeline'
-                  ? 'bg-white text-violet-700 shadow-sm'
+                  ? 'bg-honey-400 text-ink-900 border-2 border-ink-900'
                   : 'text-ink-500 hover:text-ink-800'
               }`}
             >
@@ -161,13 +161,13 @@ export default function ProgramsComparison() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`rounded-3xl p-8 sm:p-10 border flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 ${prog.bgClass}`}
+                transition={{ duration: 0.35, delay: index * 0.06 }}
+                className={`rounded-xl p-8 sm:p-10 border-[3px] border-ink-900 flex flex-col justify-between transition-all duration-150 shadow-brutal-md hover:shadow-brutal-lg hover:-translate-y-0.5 ${prog.bgClass}`}
               >
                 <div>
                   {/* Tag & Seats Bar */}
                   <div className="flex items-center justify-between mb-4">
-                    <span className={`px-3 py-1 rounded-lg text-[10px] font-mono font-extrabold border ${prog.badgeClass}`}>
+                    <span className={`px-3 py-1 rounded-lg text-[10px] font-mono font-extrabold border-2 ${prog.badgeClass}`}>
                       {prog.tag}
                     </span>
                     <span className="text-xs font-mono font-semibold text-ink-600 flex items-center gap-1.5">
@@ -188,7 +188,7 @@ export default function ProgramsComparison() {
                   {/* Location Chips */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {prog.locations.map((loc) => (
-                      <span key={loc} className="px-3 py-1 rounded-full bg-white/90 border border-ink-900/10 text-xs font-mono font-medium text-ink-800 flex items-center gap-1.5 shadow-xs">
+                      <span key={loc} className="px-3 py-1 rounded-full bg-white border-2 border-ink-900 text-xs font-mono font-medium text-ink-800 flex items-center gap-1.5">
                         <MapPin className="w-3 h-3 text-violet-600" />
                         {loc}
                       </span>
@@ -196,7 +196,7 @@ export default function ProgramsComparison() {
                   </div>
 
                   {/* Stats Grid */}
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-2xl bg-white/90 border border-ink-900/[0.06] mb-8 shadow-xs">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-xl bg-white border-2 border-ink-900 mb-8">
                     {prog.stats.map((s) => (
                       <div key={s.label}>
                         <div className="text-[10px] font-mono text-ink-400 font-semibold uppercase">{s.label}</div>
@@ -222,7 +222,7 @@ export default function ProgramsComparison() {
                 {/* CTA Button */}
                 <a
                   href="#apply"
-                  className="w-full py-4 rounded-2xl bg-white hover:bg-white/90 border border-ink-900/10 font-mono text-xs font-bold uppercase tracking-wider text-ink-900 flex items-center justify-center gap-2 shadow-sm hover:border-violet-400 transition-all active:scale-[0.98]"
+                  className="btn-primary w-full py-4 rounded-xl bg-white hover:bg-honey-100 font-mono text-xs font-bold uppercase tracking-wider text-ink-900 flex items-center justify-center gap-2 transition-colors"
                 >
                   <span>{prog.cta}</span>
                   <ArrowRight className="w-4 h-4 text-violet-600" />
@@ -234,10 +234,10 @@ export default function ProgramsComparison() {
           /* View Mode 2: Step-by-Step Curriculum Timeline */
           <div className="space-y-10">
             {programs.map((prog) => (
-              <div key={prog.id} className={`rounded-3xl p-8 sm:p-10 border ${prog.bgClass}`}>
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 pb-4 border-b border-ink-900/[0.08] gap-3">
+              <div key={prog.id} className={`rounded-xl p-8 sm:p-10 border-[3px] border-ink-900 shadow-brutal-md ${prog.bgClass}`}>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 pb-4 border-b-2 border-ink-900 gap-3">
                   <div>
-                    <span className={`px-2.5 py-0.5 rounded text-[10px] font-mono font-bold border ${prog.badgeClass}`}>
+                    <span className={`px-2.5 py-0.5 rounded text-[10px] font-mono font-bold border-2 ${prog.badgeClass}`}>
                       {prog.tag}
                     </span>
                     <h3 className="text-2xl font-display font-bold text-ink-900 mt-2">
@@ -251,8 +251,8 @@ export default function ProgramsComparison() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {prog.phases.map((ph, idx) => (
-                    <div key={idx} className="p-5 rounded-2xl bg-white/95 border border-ink-900/[0.06] shadow-xs">
-                      <span className="px-2 py-0.5 rounded-md bg-canvas-200 text-[10px] font-mono font-extrabold text-ink-800">
+                    <div key={idx} className="p-5 rounded-xl bg-white border-2 border-ink-900">
+                      <span className="px-2 py-0.5 rounded-md bg-canvas-200 border border-ink-900 text-[10px] font-mono font-extrabold text-ink-800">
                         {ph.phase}
                       </span>
                       <h4 className="font-display font-bold text-sm text-ink-900 mt-3 mb-1.5">

@@ -15,8 +15,8 @@ const pitchDecks = [
     hook: "Solved 'stranger danger' friction through 2-sided review mechanics and 3-click booking workflow.",
     tags: ["Marketplace", "Travel", "Iconic Seed"],
     accent: "blush",
-    bgClass: "bg-blush-50/70 border-blush-200 hover:border-blush-400 text-blush-900",
-    badgeClass: "bg-blush-100 text-blush-800 border-blush-200",
+    bgClass: "bg-blush-100 text-blush-900",
+    badgeClass: "bg-blush-200 text-blush-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 01: Problem Definition",
@@ -50,8 +50,8 @@ const pitchDecks = [
     hook: "Positioned as 'Next-Gen Car Service' for tech elite before unlocking mass market ride-sharing economics.",
     tags: ["On-Demand", "Network Effects", "Mobility"],
     accent: "honey",
-    bgClass: "bg-honey-50/70 border-honey-200 hover:border-honey-400 text-honey-900",
-    badgeClass: "bg-honey-100 text-honey-800 border-honey-200",
+    bgClass: "bg-honey-100 text-honey-900",
+    badgeClass: "bg-honey-200 text-honey-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 02: Core Inefficiencies in Taxi System",
@@ -85,8 +85,8 @@ const pitchDecks = [
     hook: "Demonstrated reusable booster unit economics and locked-in NASA commercial resupply contracts.",
     tags: ["DeepTech", "Aerospace", "Late-Stage"],
     accent: "sky",
-    bgClass: "bg-sky-50/70 border-sky-200 hover:border-sky-400 text-sky-900",
-    badgeClass: "bg-sky-100 text-sky-800 border-sky-200",
+    bgClass: "bg-sky-100 text-sky-900",
+    badgeClass: "bg-sky-200 text-sky-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 03: First Principles Manufacturing Cost",
@@ -114,8 +114,8 @@ const pitchDecks = [
     hook: "Leveraged .edu scarcity and 89% daily active engagement rates to prove viral compounding loops.",
     tags: ["Social Media", "Consumer", "Seed"],
     accent: "violet",
-    bgClass: "bg-violet-50/70 border-violet-200 hover:border-violet-400 text-violet-900",
-    badgeClass: "bg-violet-100 text-violet-800 border-violet-200",
+    bgClass: "bg-violet-100 text-violet-900",
+    badgeClass: "bg-violet-200 text-violet-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 02: Harvard & Ivy League Engagement",
@@ -143,8 +143,8 @@ const pitchDecks = [
     hook: "Relationships matter. Professional networking monetization model combining premium search & enterprise hiring.",
     tags: ["Social Network", "Enterprise", "Series B"],
     accent: "sky",
-    bgClass: "bg-sky-50/70 border-sky-200 hover:border-sky-400 text-sky-900",
-    badgeClass: "bg-sky-100 text-sky-800 border-sky-200",
+    bgClass: "bg-sky-100 text-sky-900",
+    badgeClass: "bg-sky-200 text-sky-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 04: The 2.0 Web Monetization",
@@ -166,8 +166,8 @@ const pitchDecks = [
     hook: "Drew Houston's 3-minute video demo proving pent-up demand without spending a single dollar on paid acquisition.",
     tags: ["SaaS", "Cloud Storage", "Product-Led"],
     accent: "sage",
-    bgClass: "bg-sage-50/70 border-sage-200 hover:border-sage-400 text-sage-900",
-    badgeClass: "bg-sage-100 text-sage-800 border-sage-200",
+    bgClass: "bg-sage-100 text-sage-900",
+    badgeClass: "bg-sage-200 text-sage-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 01: Why Sync Is Broken Across USBs",
@@ -195,8 +195,8 @@ const pitchDecks = [
     hook: "Broadcast yourself. Flash video player embedding on MySpace creating viral video syndication loops.",
     tags: ["Consumer", "Video", "Series A"],
     accent: "blush",
-    bgClass: "bg-blush-50/70 border-blush-200 hover:border-blush-400 text-blush-900",
-    badgeClass: "bg-blush-100 text-blush-800 border-blush-200",
+    bgClass: "bg-blush-100 text-blush-900",
+    badgeClass: "bg-blush-200 text-blush-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 03: Embed Anywhere Protocol",
@@ -218,8 +218,8 @@ const pitchDecks = [
     hook: "Empowering local economies through suburban restaurant delivery logistics networks.",
     tags: ["Marketplace", "Delivery", "Seed"],
     accent: "blush",
-    bgClass: "bg-blush-50/70 border-blush-200 hover:border-blush-400 text-blush-900",
-    badgeClass: "bg-blush-100 text-blush-800 border-blush-200",
+    bgClass: "bg-blush-100 text-blush-900",
+    badgeClass: "bg-blush-200 text-blush-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 04: Suburban Logistics Wedge",
@@ -241,8 +241,8 @@ const pitchDecks = [
     hook: "Revolutionary zero-shot voice synthesis model delivering human emotional cadence with minimal latency.",
     tags: ["AI", "Voice", "SaaS"],
     accent: "violet",
-    bgClass: "bg-violet-50/70 border-violet-200 hover:border-violet-400 text-violet-900",
-    badgeClass: "bg-violet-100 text-violet-800 border-violet-200",
+    bgClass: "bg-violet-100 text-violet-900",
+    badgeClass: "bg-violet-200 text-violet-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 03: Audio Latency Barrier",
@@ -264,8 +264,8 @@ const pitchDecks = [
     hook: "Match. Chat. Date. The double-opt-in swipe mechanic eliminating social rejection risk.",
     tags: ["Consumer", "Dating", "Mobile"],
     accent: "blush",
-    bgClass: "bg-blush-50/70 border-blush-200 hover:border-blush-400 text-blush-900",
-    badgeClass: "bg-blush-100 text-blush-800 border-blush-200",
+    bgClass: "bg-blush-100 text-blush-900",
+    badgeClass: "bg-blush-200 text-blush-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 02: Double Opt-in Protection",
@@ -287,8 +287,8 @@ const pitchDecks = [
     hook: "The missing candidate experience layer integrating seamlessly with existing enterprise ATS tools.",
     tags: ["HRTech", "SaaS", "Pre-Seed"],
     accent: "sage",
-    bgClass: "bg-sage-50/70 border-sage-200 hover:border-sage-400 text-sage-900",
-    badgeClass: "bg-sage-100 text-sage-800 border-sage-200",
+    bgClass: "bg-sage-100 text-sage-900",
+    badgeClass: "bg-sage-200 text-sage-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 05: Native ATS Synchronization",
@@ -310,8 +310,8 @@ const pitchDecks = [
     hook: "Automated medical coding and billing using specialized clinical language models.",
     tags: ["HealthTech", "AI", "Pre-Seed"],
     accent: "sky",
-    bgClass: "bg-sky-50/70 border-sky-200 hover:border-sky-400 text-sky-900",
-    badgeClass: "bg-sky-100 text-sky-800 border-sky-200",
+    bgClass: "bg-sky-100 text-sky-900",
+    badgeClass: "bg-sky-200 text-sky-900 border-ink-900",
     slidesBreakdown: [
       {
         title: "Slide 04: 98% Billing Accuracy",
@@ -340,13 +340,13 @@ export default function DeckVault() {
   });
 
   return (
-    <section id="vault" className="py-28 px-6 bg-canvas-100 relative border-t border-ink-900/[0.06]">
+    <section id="vault" className="py-28 px-6 bg-canvas-100 relative border-t-[3px] border-ink-900">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100 border border-violet-200 text-violet-800 text-xs font-mono font-bold mb-4 shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100 border-2 border-ink-900 text-violet-800 text-xs font-mono font-bold mb-4">
               <Sparkles className="w-3.5 h-3.5 text-violet-600" />
               <span>PREMIUM OPEN-SOURCE RESOURCE</span>
             </div>
@@ -369,10 +369,10 @@ export default function DeckVault() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-xl text-xs font-mono font-semibold whitespace-nowrap transition-all ${
+                className={`px-4 py-2 rounded-xl text-xs font-mono font-bold whitespace-nowrap transition-all border-2 border-ink-900 ${
                   activeCategory === cat
-                    ? "bg-violet-600 text-white shadow-pastel-sm"
-                    : "bg-white text-ink-600 hover:bg-canvas-200 border border-ink-900/[0.06]"
+                    ? "bg-violet-600 text-white shadow-brutal-sm"
+                    : "bg-white text-ink-700 hover:bg-honey-100"
                 }`}
               >
                 {cat}
@@ -388,7 +388,7 @@ export default function DeckVault() {
               placeholder="Search by company or tag..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 rounded-xl bg-white border border-ink-900/10 text-xs font-sans text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500 shadow-xs"
+              className="w-full pl-10 pr-4 py-2 rounded-xl bg-white border-2 border-ink-900 text-xs font-sans text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500"
             />
           </div>
         </div>
@@ -401,8 +401,8 @@ export default function DeckVault() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.03 }}
-              className={`rounded-3xl p-6 border flex flex-col justify-between transition-all duration-300 shadow-pastel-sm hover:shadow-pastel-md hover:-translate-y-1 ${deck.bgClass}`}
+              transition={{ duration: 0.3, delay: i * 0.02 }}
+              className={`rounded-xl p-6 border-[3px] border-ink-900 flex flex-col justify-between transition-all duration-150 shadow-brutal-sm hover:shadow-brutal-md hover:-translate-y-0.5 ${deck.bgClass}`}
             >
               <div>
                 {/* Header */}
@@ -416,7 +416,7 @@ export default function DeckVault() {
                         • {deck.year}
                       </span>
                     </div>
-                    <span className={`inline-block px-2 py-0.5 rounded-md text-[10px] font-mono font-bold border ${deck.badgeClass}`}>
+                    <span className={`inline-block px-2 py-0.5 rounded-md text-[10px] font-mono font-bold border-2 ${deck.badgeClass}`}>
                       {deck.stage}
                     </span>
                   </div>
@@ -437,7 +437,7 @@ export default function DeckVault() {
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 mb-5">
                   {deck.tags.map((t) => (
-                    <span key={t} className="px-2 py-0.5 rounded-md bg-white/80 border border-ink-900/[0.06] text-[10px] font-mono text-ink-600 font-medium">
+                    <span key={t} className="px-2 py-0.5 rounded-md bg-white border border-ink-900 text-[10px] font-mono text-ink-700 font-medium">
                       {t}
                     </span>
                   ))}
@@ -447,7 +447,7 @@ export default function DeckVault() {
                 <button
                   type="button"
                   onClick={() => setSelectedDeck(deck)}
-                  className="w-full py-2.5 rounded-xl bg-white hover:bg-white/90 border border-ink-900/10 text-xs font-mono font-bold text-ink-800 flex items-center justify-center gap-2 shadow-xs transition-colors"
+                  className="btn-primary w-full py-2.5 rounded-xl bg-white hover:bg-honey-100 text-xs font-mono font-bold text-ink-800 flex items-center justify-center gap-2 transition-colors"
                 >
                   <Eye className="w-3.5 h-3.5 text-violet-600" />
                   <span>View Slide Breakdown</span>
@@ -463,17 +463,18 @@ export default function DeckVault() {
       {/* Slide Breakdown Teardown Modal */}
       <AnimatePresence>
         {selectedDeck && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink-900/40 backdrop-blur-sm">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink-900/70">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              initial={{ opacity: 0, scale: 0.97, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-3xl bg-white p-7 sm:p-9 shadow-2xl border border-ink-900/10"
+              exit={{ opacity: 0, scale: 0.97, y: 10 }}
+              transition={{ duration: 0.15, ease: 'easeOut' }}
+              className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-xl bg-white p-7 sm:p-9 shadow-brutal-xl border-[3px] border-ink-900"
             >
               <button
                 type="button"
                 onClick={() => setSelectedDeck(null)}
-                className="absolute top-5 right-5 p-2 rounded-xl bg-canvas-100 hover:bg-canvas-200 text-ink-500"
+                className="absolute top-5 right-5 p-2 rounded-xl bg-canvas-100 hover:bg-honey-100 border-2 border-ink-900 text-ink-700"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -482,7 +483,7 @@ export default function DeckVault() {
                 <h3 className="font-display font-extrabold text-2xl text-ink-900">
                   {selectedDeck.company}
                 </h3>
-                <span className={`px-2.5 py-0.5 rounded-md text-xs font-mono font-bold border ${selectedDeck.badgeClass}`}>
+                <span className={`px-2.5 py-0.5 rounded-md text-xs font-mono font-bold border-2 ${selectedDeck.badgeClass}`}>
                   {selectedDeck.stage} • {selectedDeck.year}
                 </span>
               </div>
@@ -492,7 +493,7 @@ export default function DeckVault() {
               </p>
 
               {/* Stats Bar */}
-              <div className="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-canvas-100 border border-ink-900/[0.06] mb-6 text-center">
+              <div className="grid grid-cols-3 gap-3 p-4 rounded-xl bg-canvas-100 border-2 border-ink-900 mb-6 text-center">
                 <div>
                   <div className="text-xs font-mono text-ink-400 uppercase">Capital Raised</div>
                   <div className="font-display font-extrabold text-base text-ink-900">{selectedDeck.raised}</div>
@@ -514,13 +515,13 @@ export default function DeckVault() {
                 </h4>
 
                 {selectedDeck.slidesBreakdown.map((s, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-canvas-100/80 border border-ink-900/[0.06] space-y-2">
+                  <div key={idx} className="p-4 rounded-xl bg-canvas-100 border-2 border-ink-900 space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="font-display font-bold text-sm text-ink-900">{s.title}</div>
-                      <span className={`px-2 py-0.5 rounded text-[9px] font-mono font-bold ${
+                      <span className={`px-2 py-0.5 rounded text-[9px] font-mono font-bold border-2 ${
                         s.status === 'LETHAL WEDGE'
-                          ? 'bg-blush-100 text-blush-800 border border-blush-200'
-                          : 'bg-sage-100 text-sage-800 border border-sage-200'
+                          ? 'bg-blush-200 text-blush-900 border-ink-900'
+                          : 'bg-sage-200 text-sage-900 border-ink-900'
                       }`}>
                         {s.status}
                       </span>
@@ -528,7 +529,7 @@ export default function DeckVault() {
                     <p className="text-xs text-ink-600 font-sans">
                       <strong className="text-ink-800">Slide Content:</strong> {s.takeaway}
                     </p>
-                    <div className="text-[11px] font-mono text-violet-700 bg-violet-50/80 p-2 rounded-lg border border-violet-100">
+                    <div className="text-[11px] font-mono text-violet-700 bg-violet-100 p-2 rounded-lg border-2 border-ink-900">
                       <strong>Operator Note:</strong> {s.vcVerdict}
                     </div>
                   </div>
@@ -536,11 +537,11 @@ export default function DeckVault() {
               </div>
 
               {/* Actions */}
-              <div className="flex items-center justify-between pt-4 border-t border-ink-900/[0.06]">
+              <div className="flex items-center justify-between pt-4 border-t-[3px] border-ink-900">
                 <a
                   href="#apply"
                   onClick={() => setSelectedDeck(null)}
-                  className="px-6 py-3 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-mono text-xs font-bold shadow-pastel-sm transition-all"
+                  className="btn-primary px-6 py-3 rounded-xl bg-violet-600 text-white font-mono text-xs font-bold transition-colors"
                 >
                   Pressure-Test Your Deck in Setu War Room
                 </a>

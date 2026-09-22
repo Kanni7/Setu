@@ -20,7 +20,7 @@ const mentorsList = [
     tier: "Identity & Cryptography",
     highlight: "11+ Yrs in Trust Protocols",
     accent: "violet",
-    tagBg: "bg-violet-100 text-violet-800 border-violet-200",
+    tagBg: "bg-violet-100 text-violet-900 border-2 border-ink-900",
   },
   {
     name: "Ashish Kulkarni",
@@ -32,7 +32,7 @@ const mentorsList = [
     tier: "Capital & Founder Mindset",
     highlight: "Ex-FundEnable Co-Founder",
     accent: "sage",
-    tagBg: "bg-sage-100 text-sage-800 border-sage-200",
+    tagBg: "bg-sage-100 text-sage-900 border-2 border-ink-900",
   },
   {
     name: "Vaibhav Bhargava",
@@ -44,7 +44,7 @@ const mentorsList = [
     tier: "Enterprise Scale & CRM",
     highlight: "15+ Yrs Enterprise Arch",
     accent: "sky",
-    tagBg: "bg-sky-100 text-sky-800 border-sky-200",
+    tagBg: "bg-sky-100 text-sky-900 border-2 border-ink-900",
   },
   {
     name: "Harsh Gupta",
@@ -56,7 +56,7 @@ const mentorsList = [
     tier: "Quantum & Physics R&D",
     highlight: "Quantum Computing at IISER",
     accent: "violet",
-    tagBg: "bg-violet-100 text-violet-800 border-violet-200",
+    tagBg: "bg-violet-100 text-violet-900 border-2 border-ink-900",
   },
   {
     name: "Pavan Agarwal",
@@ -68,7 +68,7 @@ const mentorsList = [
     tier: "Physical Retail & Scale",
     highlight: "30+ Multiplex Screens",
     accent: "honey",
-    tagBg: "bg-honey-100 text-honey-800 border-honey-200",
+    tagBg: "bg-honey-100 text-honey-900 border-2 border-ink-900",
   },
   {
     name: "CA Moon Goel",
@@ -80,7 +80,7 @@ const mentorsList = [
     tier: "Forensic Audit & Diligence",
     highlight: "20+ Yrs Valuation Forensics",
     accent: "sage",
-    tagBg: "bg-sage-100 text-sage-800 border-sage-200",
+    tagBg: "bg-sage-100 text-sage-900 border-2 border-ink-900",
   },
   {
     name: "CA Mahendra Tiwari",
@@ -92,7 +92,7 @@ const mentorsList = [
     tier: "Tax Structuring & Compliance",
     highlight: "20+ Yrs Corporate Structuring",
     accent: "blush",
-    tagBg: "bg-blush-100 text-blush-800 border-blush-200",
+    tagBg: "bg-blush-100 text-blush-900 border-2 border-ink-900",
   },
   {
     name: "Akash Kansal",
@@ -104,7 +104,7 @@ const mentorsList = [
     tier: "Product Strategy & AI",
     highlight: "Ex-99acres, Droom, Deloitte",
     accent: "violet",
-    tagBg: "bg-violet-100 text-violet-800 border-violet-200",
+    tagBg: "bg-violet-100 text-violet-900 border-2 border-ink-900",
   },
   {
     name: "Deric Karunesudas",
@@ -116,7 +116,7 @@ const mentorsList = [
     tier: "Cyber Defense & Angel",
     highlight: "18+ Yrs Global Enterprise",
     accent: "sky",
-    tagBg: "bg-sky-100 text-sky-800 border-sky-200",
+    tagBg: "bg-sky-100 text-sky-900 border-2 border-ink-900",
   },
   {
     name: "Dr Debashis Bhattacharya",
@@ -128,7 +128,7 @@ const mentorsList = [
     tier: "Healthcare & MedTech VC",
     highlight: "Surgeon & MNC Advisor",
     accent: "sage",
-    tagBg: "bg-sage-100 text-sage-800 border-sage-200",
+    tagBg: "bg-sage-100 text-sage-900 border-2 border-ink-900",
   },
   {
     name: "Anant Sharma",
@@ -140,7 +140,7 @@ const mentorsList = [
     tier: "Hardware & Biosensing",
     highlight: "Patented IoT Wearable Tech",
     accent: "honey",
-    tagBg: "bg-honey-100 text-honey-800 border-honey-200",
+    tagBg: "bg-honey-100 text-honey-900 border-2 border-ink-900",
   },
   {
     name: "Gaurav Bansal",
@@ -152,7 +152,7 @@ const mentorsList = [
     tier: "Venture Architecture",
     highlight: "Founder & Masterclass Lead",
     accent: "blush",
-    tagBg: "bg-blush-100 text-blush-800 border-blush-200",
+    tagBg: "bg-blush-100 text-blush-900 border-2 border-ink-900",
   }
 ];
 
@@ -181,12 +181,12 @@ export default function MentorsGrid() {
   // Mapping accents to specific premium solid colors inspired by the design
   const getCardBg = (accent) => {
     switch(accent) {
-      case 'violet': return 'bg-[#B84A3A]';
-      case 'sage': return 'bg-[#8C6653]';
-      case 'sky': return 'bg-[#7D6F63]';
-      case 'honey': return 'bg-[#C9814C]';
-      case 'blush': return 'bg-[#E07A5F]';
-      default: return 'bg-[#B84A3A]';
+      case 'violet': return 'bg-[#8E0D3C]';
+      case 'sage': return 'bg-[#7D435A]';
+      case 'sky': return 'bg-[#413A52]';
+      case 'honey': return 'bg-[#F15C64]';
+      case 'blush': return 'bg-[#EF3B33]';
+      default: return 'bg-[#8E0D3C]';
     }
   };
 
@@ -216,19 +216,19 @@ export default function MentorsGrid() {
               <label htmlFor="email" className="block text-xs font-mono font-medium text-ink-500 mb-2">
                 email address
               </label>
-              <div className="flex items-center gap-2 border-b-2 border-ink-200 pb-2 mb-4 focus-within:border-ink-900 transition-colors">
-                <input 
-                  type="email" 
-                  id="email" 
+              <div className="flex items-center gap-2 border-b-[3px] border-ink-900 pb-2 mb-4 focus-within:border-violet-600 transition-colors">
+                <input
+                  type="email"
+                  id="email"
                   placeholder="Enter your email"
                   className="bg-transparent border-none outline-none w-full text-ink-900 placeholder:text-ink-300 font-sans text-sm"
                 />
               </div>
               <div className="flex gap-2">
-                <button className="flex-1 bg-ink-900 hover:bg-ink-800 text-white font-sans font-semibold py-3 px-6 rounded-xl transition-colors">
+                <button className="btn-primary flex-1 bg-ink-900 text-white font-sans font-semibold py-3 px-6 rounded-xl transition-colors">
                   Subscribe
                 </button>
-                <button className="bg-ink-200 hover:bg-ink-300 text-ink-900 p-3 rounded-xl transition-colors flex items-center justify-center aspect-square">
+                <button className="btn-primary bg-honey-400 text-ink-900 p-3 rounded-xl transition-colors flex items-center justify-center aspect-square">
                   <Mail className="w-5 h-5" />
                 </button>
               </div>
@@ -257,30 +257,25 @@ export default function MentorsGrid() {
                     opacity: diff === -1 ? 0 : diff >= 4 ? 0 : 1, // Fade out smoothly
                     zIndex: diff === -1 ? 0 : 10 - diff, // Ensure exiting card is BELOW incoming card
                   }}
-                  transition={{ 
-                    type: "spring", 
-                    stiffness: 120, 
-                    damping: 24, 
-                    mass: 1 
-                  }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
                   style={{ display: isVisible ? 'flex' : 'none' }}
-                  className={`absolute left-0 top-0 w-[300px] sm:w-[320px] h-[460px] flex-col rounded-[32px] overflow-hidden cursor-pointer group shadow-pastel-sm ${getCardBg(mentor.accent)}`}
+                  className={`absolute left-0 top-0 w-[300px] sm:w-[320px] h-[460px] flex-col rounded-xl overflow-hidden cursor-pointer group border-[3px] border-ink-900 shadow-brutal-md ${getCardBg(mentor.accent)}`}
                   onClick={() => setActiveMentorModal(mentor)}
                 >
                   {/* Top Text Section */}
                   <div className="p-6 pb-2 relative z-10 flex flex-col flex-shrink-0">
                     {/* Domain pill + arrow */}
                     <div className="flex items-center justify-between mb-4">
-                      <span className="px-3 py-1.5 rounded-full bg-black/10 border border-black/5 text-[10px] font-mono font-bold text-ink-900 tracking-wide">
+                      <span className="px-3 py-1.5 rounded-md bg-white border-2 border-ink-900 text-[10px] font-mono font-bold text-ink-900 tracking-wide">
                         {mentor.tier}
                       </span>
-                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black/5 text-ink-900 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:-rotate-45">
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white border-2 border-ink-900 text-ink-900 opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:-rotate-45">
                         <ArrowRight className="h-4 w-4" />
                       </span>
                     </div>
 
                     {/* Name + role */}
-                    <h3 className="font-display font-bold text-[26px] leading-tight text-ink-900 mb-2 tracking-tight drop-shadow-sm">
+                    <h3 className="font-display font-bold text-[26px] leading-tight text-ink-900 mb-2 tracking-tight">
                       {mentor.name}
                     </h3>
                     <p className="text-sm text-ink-800 font-medium font-sans leading-snug line-clamp-3">
@@ -289,8 +284,8 @@ export default function MentorsGrid() {
                   </div>
 
                   {/* Bottom Image Section */}
-                  <div className="relative w-full flex-grow mt-4 overflow-hidden rounded-t-[2rem]">
-                    <div className="absolute inset-0 bg-black/10 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative w-full flex-grow mt-4 overflow-hidden border-t-[3px] border-ink-900">
+                    <div className="absolute inset-0 bg-black/10 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                     <img
                       src={mentor.img}
                       alt={mentor.name}
@@ -308,17 +303,18 @@ export default function MentorsGrid() {
       {/* Mentor Profile Modal */}
       <AnimatePresence>
         {activeMentorModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink-900/40 backdrop-blur-sm">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink-900/70">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              initial={{ opacity: 0, scale: 0.97, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-lg rounded-3xl bg-white p-7 sm:p-8 shadow-2xl border border-ink-900/10 max-h-[90vh] overflow-y-auto scrollbar-none"
+              exit={{ opacity: 0, scale: 0.97, y: 10 }}
+              transition={{ duration: 0.15, ease: 'easeOut' }}
+              className="relative w-full max-w-lg rounded-xl bg-white p-7 sm:p-8 shadow-brutal-xl border-[3px] border-ink-900 max-h-[90vh] overflow-y-auto scrollbar-none"
             >
               <button
                 type="button"
                 onClick={() => setActiveMentorModal(null)}
-                className="absolute top-5 right-5 p-2 rounded-xl bg-canvas-100 hover:bg-canvas-200 text-ink-500 z-10"
+                className="absolute top-5 right-5 p-2 rounded-xl bg-canvas-100 hover:bg-honey-100 border-2 border-ink-900 text-ink-700 z-10"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -327,8 +323,7 @@ export default function MentorsGrid() {
                 <img
                   src={activeMentorModal.img}
                   alt={activeMentorModal.name}
-                  className={`w-24 h-24 rounded-2xl object-cover border-[3px] shadow-md border-white`}
-                  style={{ backgroundColor: getCardBg(activeMentorModal.accent) }}
+                  className={`w-24 h-24 rounded-xl object-cover border-[3px] border-ink-900 ${getCardBg(activeMentorModal.accent)}`}
                 />
                 <div className="pt-2">
                   <h3 className="font-display font-bold text-2xl text-ink-900 mb-1">{activeMentorModal.name}</h3>
@@ -341,7 +336,7 @@ export default function MentorsGrid() {
 
               <div className="space-y-4 text-sm text-ink-600 leading-relaxed mb-8 font-sans">
                 <p>{activeMentorModal.bio}</p>
-                <div className="p-5 rounded-2xl bg-canvas-100 border border-ink-900/[0.06]">
+                <div className="p-5 rounded-xl bg-canvas-100 border-2 border-ink-900">
                   <div className="font-mono font-bold text-ink-900 text-xs mb-2 uppercase tracking-wide">Tactical Focus:</div>
                   <p className="text-ink-600 text-sm">Direct 1-on-1 sprint reviews, unit economics auditing, and simulated angel/enterprise pitch teardowns.</p>
                 </div>
@@ -352,7 +347,7 @@ export default function MentorsGrid() {
                   href={activeMentorModal.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-canvas-100 hover:bg-canvas-200 text-ink-800 text-sm font-mono font-semibold border border-ink-900/10 transition-colors"
+                  className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-canvas-100 hover:bg-honey-100 text-ink-800 text-sm font-mono font-semibold transition-colors"
                 >
                   <LinkedInIcon className="w-4 h-4 text-[#0A66C2]" />
                   <span>Verify on LinkedIn</span>
@@ -361,7 +356,7 @@ export default function MentorsGrid() {
                 <a
                   href="#apply"
                   onClick={() => setActiveMentorModal(null)}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-ink-900 hover:bg-ink-800 text-white text-sm font-mono font-bold shadow-md transition-all"
+                  className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-ink-900 text-white text-sm font-mono font-bold transition-colors"
                 >
                   <span>Request 1:1 War Room</span>
                 </a>

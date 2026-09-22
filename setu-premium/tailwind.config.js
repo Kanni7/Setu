@@ -7,108 +7,114 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Sunset Build — Warm Canvas System
+        // Neo-Brutalist Paper System
         canvas: {
           50:  '#FFFFFF',
-          100: '#FFF3E7',    // primary page bg — warm sunset cream
-          200: '#F6E2CE',    // subtle section tint
-          300: '#E8D8CF',    // warm card border / dividers
-          400: '#D8C0AC',
-          500: '#C2A793',
+          100: '#FFFBF0',    // primary page bg — raw paper white
+          200: '#FFF3D6',    // subtle section tint
+          300: '#F5E6B8',    // card alt border / dividers
+          400: '#E0D090',
+          500: '#C2AF66',
         },
-        // Terracotta — Primary Brand Accent
+        // Hot Red — Primary Brand Accent
         violet: {
-          50:  '#FDF4F1',
-          100: '#FBE7DE',
-          200: '#F6D2C0',
-          300: '#EDB299',
-          400: '#DD8468',
-          500: '#B84A3A',    // primary brand
-          600: '#A03F31',
-          700: '#7A332B',    // dark accent
-          800: '#5C2621',
-          900: '#3D1917',
+          50:  '#FFF0EF',
+          100: '#FFD9D6',
+          200: '#FFADA6',
+          300: '#FF8177',
+          400: '#FF554A',
+          500: '#FF2E2E',    // primary brand — hot red
+          600: '#E01818',
+          700: '#B01212',    // dark accent
+          800: '#7D0C0C',
+          900: '#4A0707',
         },
-        // Muted Clay — Secondary Warm Accent (verified/positive accents)
+        // Bold Pink — Secondary Accent (verified/positive accents)
         sage: {
-          50:  '#FAF6F3',
-          100: '#F2E7DD',
-          200: '#DFC9B4',
-          300: '#C29E85',
-          400: '#A67A5D',
-          500: '#8C6653',
-          600: '#6E4F3F',
-          700: '#55402F',
-          800: '#402F22',
-          900: '#2C2016',
+          50:  '#FFF0F8',
+          100: '#FFD3EC',
+          200: '#FFA0D9',
+          300: '#FF6CC3',
+          400: '#FF3FAF',
+          500: '#FF1E9E',
+          600: '#DB0D82',
+          700: '#AD0A66',
+          800: '#7D0749',
+          900: '#4D042D',
         },
-        // Coral & Peach — Warm Highlight Accent
+        // Cyan — Secondary CTA & Badge Accent
         blush: {
-          50:  '#FEF3EF',
-          100: '#FCE4DB',
-          200: '#F9CBBB',
-          300: '#F2A98D',
-          400: '#E88D6C',
-          500: '#E07A5F',    // secondary CTA & badges
-          600: '#C4634A',
-          700: '#9C4C39',
-          800: '#7A3A2B',
-          900: '#56281D',
+          50:  '#E8FDFF',
+          100: '#C2F9FF',
+          200: '#85F0FF',
+          300: '#47E4FA',
+          400: '#12D3EF',
+          500: '#00BFDE',    // secondary CTA & badges — cyan
+          600: '#0099B3',
+          700: '#027388',
+          800: '#075363',
+          900: '#0A3640',
         },
-        // Apricot & Honey — Soft Accent (tags, soft cards)
+        // Raw Yellow — Soft Accent (tags, soft cards)
         honey: {
-          50:  '#FFFBF5',
-          100: '#FDF3E6',
-          200: '#F7DEC0',
-          300: '#F2C6A0',
-          400: '#E3A876',
-          500: '#C9814C',
-          600: '#A8632F',
-          700: '#86501F',
-          800: '#6B3F17',
-          900: '#4A2B0F',
+          50:  '#FFFDE8',
+          100: '#FFF9BD',
+          200: '#FFF184',
+          300: '#FFE64D',
+          400: '#FFDA1F',
+          500: '#FFC700',    // raw yellow
+          600: '#E0A500',
+          700: '#B27F00',
+          800: '#7D5900',
+          900: '#4D3600',
         },
-        // Warm Stone — Neutral Accent
+        // Flat Grey — Neutral Accent
         sky: {
-          50:  '#FAF9F8',
-          100: '#F0ECE9',
-          200: '#DBD3CC',
-          300: '#BEB2A7',
-          400: '#9A8B7E',
-          500: '#7D6F63',
-          600: '#635850',
-          700: '#4C433C',
-          800: '#372F2A',
-          900: '#26201C',
+          50:  '#FAFAFA',
+          100: '#EFEFEF',
+          200: '#D6D6D6',
+          300: '#B0B0B0',
+          400: '#868686',
+          500: '#5E5E5E',
+          600: '#454545',
+          700: '#303030',
+          800: '#1E1E1E',
+          900: '#0A0A0A',
         },
-        // Ink Typography Hierarchy
+        // Ink Typography Hierarchy — Raw Black
         ink: {
-          50:  '#FAF9F8',
-          100: '#F0EEEC',
-          200: '#DAD6D3',
-          300: '#B8B2AE',
-          400: '#948D89',
-          500: '#6B6870',
-          600: '#55515A',
-          700: '#3F3C44',
-          800: '#2E2B32',
-          900: '#242A32',    // primary crisp text
+          50:  '#F5F5F5',
+          100: '#E0E0E0',
+          200: '#BDBDBD',
+          300: '#949494',
+          400: '#6B6B6B',
+          500: '#4A4A4A',
+          600: '#333333',
+          700: '#212121',
+          800: '#141414',
+          900: '#0A0A0A',    // primary crisp text — near-black
         },
       },
       fontFamily: {
-        sans: ['Shantell Sans', 'ui-sans-serif', 'sans-serif'],
-        display: ['Shantell Sans', 'ui-sans-serif', 'sans-serif'],
-        serif: ['Shantell Sans', 'Georgia', 'serif'],
+        sans: ['Space Grotesk', 'ui-sans-serif', 'sans-serif'],
+        display: ['Space Grotesk', 'ui-sans-serif', 'sans-serif'],
+        serif: ['Space Grotesk', 'ui-sans-serif', 'sans-serif'],
         mono: ['JetBrains Mono', 'Space Grotesk', 'monospace'],
       },
+      borderRadius: {
+        // Cap all rounding at 12px — kills the rounded-3xl/2xl softness sitewide
+        '2xl': '0.75rem',
+        '3xl': '0.75rem',
+      },
       boxShadow: {
-        'pastel-sm': '0 2px 8px -2px rgba(36,42,50,0.04), 0 1px 2px rgba(36,42,50,0.02)',
-        'pastel-md': '0 8px 24px -6px rgba(36,42,50,0.06), 0 2px 6px -1px rgba(36,42,50,0.03)',
-        'pastel-lg': '0 20px 48px -12px rgba(36,42,50,0.08), 0 4px 12px -2px rgba(36,42,50,0.04)',
-        'pastel-xl': '0 32px 64px -16px rgba(184,74,58,0.12), 0 8px 24px -4px rgba(36,42,50,0.04)',
-        'pastel-glow-violet': '0 12px 36px -8px rgba(184,74,58,0.30)',
-        'pastel-glow-sage': '0 12px 36px -8px rgba(140,102,83,0.25)',
-        'pastel-glow-blush': '0 12px 36px -8px rgba(224,122,95,0.25)',
+        // Hard offset shadows — no blur, no soft glow
+        'brutal-sm': '3px 3px 0px #0A0A0A',
+        'brutal-md': '6px 6px 0px #0A0A0A',
+        'brutal-lg': '8px 8px 0px #0A0A0A',
+        'brutal-xl': '12px 12px 0px #0A0A0A',
+        'brutal-violet': '6px 6px 0px #FF2E2E',
+        'brutal-sage': '6px 6px 0px #FF1E9E',
+        'brutal-blush': '6px 6px 0px #00BFDE',
       },
       animation: {
         'float-slow': 'float 7s ease-in-out infinite',

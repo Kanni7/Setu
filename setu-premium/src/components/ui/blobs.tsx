@@ -38,13 +38,16 @@ export function AnimatedBlobs({
         className
       )}
     >
-      <span className="absolute pointer-events-none z-10 px-6 text-center font-display font-bold tracking-tight text-white text-3xl sm:text-5xl md:text-6xl leading-tight whitespace-pre-line">
+      <span
+        className="absolute pointer-events-none z-10 px-6 text-center font-display font-bold tracking-tight text-white text-3xl sm:text-5xl md:text-6xl leading-tight whitespace-pre-line"
+        style={{ textShadow: '4px 4px 0px #0A0A0A' }}
+      >
         {text}
       </span>
       <div className="grid" style={{ gridTemplateAreas: "'stack'" }}>
         <div
-          className="grid relative"
-          style={{ gridTemplateAreas: "'stack'", gridArea: "stack", animation: "spin 5s linear infinite" }}
+          className="grid relative w-[58vmin] h-[58vmin]"
+          style={{ gridTemplateAreas: "'stack'", gridArea: "stack", animation: "spin 8s linear infinite" }}
         >
           {BLOBS.map((blob, index) => (
             <span

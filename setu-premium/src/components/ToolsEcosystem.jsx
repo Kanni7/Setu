@@ -41,8 +41,8 @@ export default function ToolsEcosystem() {
       icon: Compass,
       tag: "Spatial Directory",
       accent: "violet",
-      bgClass: "bg-violet-50/70 border-violet-200 text-violet-900",
-      badgeClass: "bg-violet-100 text-violet-800 border-violet-200",
+      bgClass: "bg-violet-100 text-violet-900",
+      badgeClass: "bg-violet-200 text-violet-900 border-ink-900",
       metrics: "180+ Physical Hubs Mapped"
     },
     {
@@ -53,8 +53,8 @@ export default function ToolsEcosystem() {
       icon: Database,
       tag: "Capital Pipeline",
       accent: "sage",
-      bgClass: "bg-sage-50/70 border-sage-200 text-sage-900",
-      badgeClass: "bg-sage-100 text-sage-800 border-sage-200",
+      bgClass: "bg-sage-100 text-sage-900",
+      badgeClass: "bg-sage-200 text-sage-900 border-ink-900",
       metrics: "250+ Active Check Writers"
     },
     {
@@ -65,8 +65,8 @@ export default function ToolsEcosystem() {
       icon: Gift,
       tag: "Govt Grants",
       accent: "blush",
-      bgClass: "bg-blush-50/70 border-blush-200 text-blush-900",
-      badgeClass: "bg-blush-100 text-blush-800 border-blush-200",
+      bgClass: "bg-blush-100 text-blush-900",
+      badgeClass: "bg-blush-200 text-blush-900 border-ink-900",
       metrics: "₹120Cr+ Total Grant Pool"
     },
     {
@@ -77,8 +77,8 @@ export default function ToolsEcosystem() {
       icon: FileText,
       tag: "Narrative Strategy",
       accent: "honey",
-      bgClass: "bg-honey-50/70 border-honey-200 text-honey-900",
-      badgeClass: "bg-honey-100 text-honey-800 border-honey-200",
+      bgClass: "bg-honey-100 text-honey-900",
+      badgeClass: "bg-honey-200 text-honey-900 border-ink-900",
       metrics: "35+ Teardown Decks"
     },
     {
@@ -89,8 +89,8 @@ export default function ToolsEcosystem() {
       icon: Calculator,
       tag: "Unit Economics",
       accent: "sky",
-      bgClass: "bg-sky-50/70 border-sky-200 text-sky-900",
-      badgeClass: "bg-sky-100 text-sky-800 border-sky-200",
+      bgClass: "bg-sky-100 text-sky-900",
+      badgeClass: "bg-sky-200 text-sky-900 border-ink-900",
       metrics: "Real-Time Sensitivity Analysis"
     },
     {
@@ -101,20 +101,20 @@ export default function ToolsEcosystem() {
       icon: PieChart,
       tag: "Cap Table",
       accent: "violet",
-      bgClass: "bg-violet-50/70 border-violet-200 text-violet-900",
-      badgeClass: "bg-violet-100 text-violet-800 border-violet-200",
+      bgClass: "bg-violet-100 text-violet-900",
+      badgeClass: "bg-violet-200 text-violet-900 border-ink-900",
       metrics: "Multi-Round Modeling"
     }
   ];
 
   return (
-    <section id="tools" className="py-28 px-6 bg-canvas-100 relative border-t border-ink-900/[0.06]">
+    <section id="tools" className="py-28 px-6 bg-canvas-100 relative border-t-[3px] border-ink-900">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100 border border-violet-200 text-violet-800 text-xs font-mono font-bold mb-4 shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-100 border-2 border-ink-900 text-violet-800 text-xs font-mono font-bold mb-4">
               <Layers className="w-3.5 h-3.5 text-violet-600" />
               <span>FOUNDER ARSENAL & TOOLKIT</span>
             </div>
@@ -130,10 +130,10 @@ export default function ToolsEcosystem() {
         </div>
 
         {/* Interactive Simulator Highlight Widget */}
-        <div className="rounded-3xl bg-white border border-ink-900/[0.08] p-6 sm:p-10 shadow-pastel-md mb-14">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-ink-900/[0.06] gap-4">
+        <div className="rounded-xl bg-white border-[3px] border-ink-900 p-6 sm:p-10 shadow-brutal-md mb-14">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b-2 border-ink-900 gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-violet-100 text-violet-700 flex items-center justify-center font-bold">
+              <div className="w-10 h-10 rounded-xl bg-violet-100 border-2 border-ink-900 text-violet-700 flex items-center justify-center font-bold">
                 <Sliders className="w-5 h-5" />
               </div>
               <div>
@@ -146,12 +146,12 @@ export default function ToolsEcosystem() {
               </div>
             </div>
 
-            <div className="flex items-center gap-2 p-1 rounded-xl bg-canvas-200 border border-ink-900/[0.06] self-start sm:self-auto">
+            <div className="flex items-center gap-2 p-1 rounded-xl bg-canvas-200 border-2 border-ink-900 self-start sm:self-auto">
               <button
                 onClick={() => setActiveSimulator('captable')}
                 className={`px-4 py-2 rounded-lg text-xs font-mono font-bold transition-all ${
                   activeSimulator === 'captable'
-                    ? 'bg-white text-violet-700 shadow-sm'
+                    ? 'bg-honey-400 text-ink-900 border-2 border-ink-900'
                     : 'text-ink-500 hover:text-ink-800'
                 }`}
               >
@@ -161,7 +161,7 @@ export default function ToolsEcosystem() {
                 onClick={() => setActiveSimulator('runway')}
                 className={`px-4 py-2 rounded-lg text-xs font-mono font-bold transition-all ${
                   activeSimulator === 'runway'
-                    ? 'bg-white text-violet-700 shadow-sm'
+                    ? 'bg-honey-400 text-ink-900 border-2 border-ink-900'
                     : 'text-ink-500 hover:text-ink-800'
                 }`}
               >
@@ -225,7 +225,7 @@ export default function ToolsEcosystem() {
               </div>
 
               {/* Live Output Card */}
-              <div className="lg:col-span-5 p-6 rounded-2xl bg-canvas-100 border border-ink-900/[0.06] space-y-4">
+              <div className="lg:col-span-5 p-6 rounded-xl bg-canvas-100 border-2 border-ink-900 space-y-4">
                 <div className="text-xs font-mono uppercase tracking-wider text-ink-400 font-bold">
                   Post-Round Cap Table Ownership
                 </div>
@@ -256,7 +256,7 @@ export default function ToolsEcosystem() {
                   </div>
                 </div>
 
-                <div className="pt-3 border-t border-ink-900/[0.06] flex items-center justify-between text-xs font-mono">
+                <div className="pt-3 border-t-2 border-ink-900 flex items-center justify-between text-xs font-mono">
                   <span className="text-ink-500">Post-Money Valuation:</span>
                   <span className="font-extrabold text-ink-900">₹{postMoneyVal.toFixed(2)} Cr</span>
                 </div>
@@ -298,7 +298,7 @@ export default function ToolsEcosystem() {
                 </div>
               </div>
 
-              <div className="lg:col-span-5 p-6 rounded-2xl bg-canvas-100 border border-ink-900/[0.06] text-center space-y-3">
+              <div className="lg:col-span-5 p-6 rounded-xl bg-canvas-100 border-2 border-ink-900 text-center space-y-3">
                 <div className="text-xs font-mono uppercase tracking-wider text-ink-400 font-bold">
                   Effective Operational Runway
                 </div>
@@ -327,15 +327,15 @@ export default function ToolsEcosystem() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.04 }}
-                className={`rounded-3xl p-6 border flex flex-col justify-between transition-all duration-300 shadow-pastel-sm hover:shadow-pastel-md hover:-translate-y-1 ${tool.bgClass}`}
+                transition={{ duration: 0.3, delay: index * 0.03 }}
+                className={`rounded-xl p-6 border-[3px] border-ink-900 flex flex-col justify-between transition-all duration-150 shadow-brutal-sm hover:shadow-brutal-md hover:-translate-y-0.5 ${tool.bgClass}`}
               >
                 <div>
                   <div className="flex items-start justify-between mb-4">
-                    <div className="w-11 h-11 rounded-2xl bg-white/90 border border-ink-900/10 flex items-center justify-center text-ink-900 shadow-xs">
+                    <div className="w-11 h-11 rounded-xl bg-white border-2 border-ink-900 flex items-center justify-center text-ink-900">
                       <Icon className="w-5 h-5 text-violet-700" />
                     </div>
-                    <span className={`px-2.5 py-0.5 rounded-md text-[10px] font-mono font-bold border ${tool.badgeClass}`}>
+                    <span className={`px-2.5 py-0.5 rounded-md text-[10px] font-mono font-bold border-2 ${tool.badgeClass}`}>
                       {tool.status}
                     </span>
                   </div>
@@ -349,7 +349,7 @@ export default function ToolsEcosystem() {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-ink-900/[0.06] flex items-center justify-between">
+                <div className="pt-4 border-t-2 border-ink-900 flex items-center justify-between">
                   <span className="text-[11px] font-mono font-bold text-ink-700">
                     {tool.metrics}
                   </span>

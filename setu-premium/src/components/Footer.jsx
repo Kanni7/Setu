@@ -45,16 +45,16 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-canvas-200/50 text-ink-500 font-sans border-t border-ink-900/[0.08] relative z-10 pt-20 pb-10 px-6">
+    <footer className="bg-canvas-200 text-ink-500 font-sans border-t-[3px] border-ink-900 relative z-10 pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto">
 
         {/* Top Branding & Link Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-ink-900/[0.08]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b-[3px] border-ink-900">
 
           {/* Left Column: Brand & Tagline */}
           <div className="lg:col-span-2 space-y-5">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl overflow-hidden p-0.5 bg-white border border-ink-900/10 shadow-sm">
+              <div className="w-12 h-12 rounded-xl overflow-hidden p-0.5 bg-white border-2 border-ink-900 shadow-brutal-sm">
                 <img
                   src="/images/logo.png"
                   alt="Setu Logo"
@@ -81,7 +81,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-xl bg-white border border-ink-900/10 flex items-center justify-center text-ink-400 hover:text-violet-700 hover:border-violet-300 shadow-sm transition-all"
+                className="w-10 h-10 rounded-xl bg-white border-2 border-ink-900 flex items-center justify-center text-ink-700 hover:text-white hover:bg-violet-600 shadow-brutal-sm transition-colors"
                 aria-label="LinkedIn"
               >
                 <LinkedInIcon className="w-4 h-4" />
@@ -90,7 +90,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-xl bg-white border border-ink-900/10 flex items-center justify-center text-ink-400 hover:text-violet-700 hover:border-violet-300 shadow-sm transition-all"
+                className="w-10 h-10 rounded-xl bg-white border-2 border-ink-900 flex items-center justify-center text-ink-700 hover:text-white hover:bg-violet-600 shadow-brutal-sm transition-colors"
                 aria-label="Instagram"
               >
                 <InstagramIcon className="w-4 h-4" />
@@ -99,7 +99,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-xl bg-white border border-ink-900/10 flex items-center justify-center text-ink-400 hover:text-violet-700 hover:border-violet-300 shadow-sm transition-all"
+                className="w-10 h-10 rounded-xl bg-white border-2 border-ink-900 flex items-center justify-center text-ink-700 hover:text-white hover:bg-violet-600 shadow-brutal-sm transition-colors"
                 aria-label="Twitter / X"
               >
                 <TwitterIcon className="w-4 h-4" />
