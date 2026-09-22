@@ -4,9 +4,6 @@ export default function AmbientBackground() {
       {/* Raw Paper Base Layer */}
       <div className="absolute inset-0 bg-[#FFFBF0]" />
 
-      {/* Fine Grid Texture */}
-      <div className="absolute inset-0 bg-linen-grid opacity-70" />
-
       {/* Dot Matrix Accent */}
       <div className="absolute inset-0 bg-dot-matrix opacity-40" />
     </div>
