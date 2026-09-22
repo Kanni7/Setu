@@ -371,9 +371,42 @@ function InteractiveFounderBoard() {
   );
 }
 
+const ROTATING_WORDS = ['Building.', 'Shipping.', 'Validating.', 'Scaling.'];
+
+function KineticRotatingWord() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % ROTATING_WORDS.length);
+    }, 2400);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <span className="relative inline-grid grid-cols-1 grid-rows-1 overflow-hidden align-baseline h-[1.16em] pb-1.5 -mb-1.5">
+      <AnimatePresence initial={false}>
+        <motion.span
+          key={ROTATING_WORDS[index]}
+          initial={{ y: '100%' }}
+          animate={{ y: '0%' }}
+          exit={{ y: '-100%' }}
+          transition={{
+            duration: 0.42,
+            ease: [0.16, 1, 0.3, 1],
+          }}
+          className="col-start-1 row-start-1 inline-block text-violet-600 whitespace-nowrap"
+        >
+          {ROTATING_WORDS[index]}
+        </motion.span>
+      </AnimatePresence>
+    </span>
+  );
+}
+
 export default function Hero() {
   return (
-    <section className="relative pt-24 sm:pt-28 pb-8 sm:pb-12 px-6 overflow-hidden flex flex-col justify-between">
+    <section className="relative pt-28 sm:pt-30 lg:pt-32 pb-8 sm:pb-10 px-6 overflow-hidden flex flex-col justify-between">
 
       {/* Crumpled Paper Ambient Background Effect */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none" aria-hidden="true">
@@ -400,12 +433,8 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-violet-100 border-2 border-ink-900 mb-4 sm:mb-5 shadow-brutal-sm"
+            className="inline-flex items-center px-4 py-1.5 rounded-full bg-violet-100 border-2 border-ink-900 mb-4 sm:mb-5 shadow-brutal-sm"
           >
-            <span className="flex h-2 w-2 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-600"></span>
-            </span>
             <span className="text-[11px] font-mono font-bold tracking-widest text-violet-800 uppercase">
               The Alternate B-School for Aspiring Founders
             </span>
@@ -420,14 +449,10 @@ export default function Hero() {
               className="text-5xl sm:text-6xl xl:text-[76px] font-display font-extrabold tracking-tight text-ink-900 leading-[1.04]"
             >
               Stop Ideating. <br />
-              <motion.span
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.45, delay: 0.1, ease: 'easeOut' }}
-                className="font-display font-extrabold text-violet-600 inline-block"
-              >
-                Start Building.
-              </motion.span>
+              <span className="font-display font-extrabold text-violet-600 inline-flex items-baseline flex-wrap">
+                <span>Start&nbsp;</span>
+                <KineticRotatingWord />
+              </span>
             </motion.h1>
           </div>
 
@@ -499,7 +524,7 @@ export default function Hero() {
       </div>
 
       {/* Institutional Strip Banner */}
-      <div className="max-w-7xl mx-auto w-full pt-8 sm:pt-10 relative z-10">
+      <div className="max-w-7xl mx-auto w-full pt-6 sm:pt-8 relative z-10">
         <div className="p-3.5 sm:p-4 rounded-xl bg-white border-2 border-ink-900 flex flex-wrap items-center justify-between gap-3 sm:gap-4 shadow-brutal-sm">
           <div className="flex items-center gap-2.5 font-mono text-xs font-semibold text-ink-700 tracking-wider uppercase">
             <Building2 className="w-4 h-4 text-violet-600" />
