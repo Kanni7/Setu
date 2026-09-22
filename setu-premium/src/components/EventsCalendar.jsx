@@ -12,7 +12,7 @@ const startupEvents = [
     month: "Jan",
     category: "Tech & Venture",
     accent: "violet",
-    tagBg: "bg-violet-100 text-violet-800 border-violet-200",
+    tagBg: "bg-violet-100 text-violet-900 border-ink-900",
     description: "One of the largest global angel gatherings featuring keynotes, institutional capital pitch pavilions, and state-backed startup initiatives."
   },
   {
@@ -24,7 +24,7 @@ const startupEvents = [
     month: "Feb",
     category: "Artificial Intelligence",
     accent: "sky",
-    tagBg: "bg-sky-100 text-sky-800 border-sky-200",
+    tagBg: "bg-sky-100 text-sky-900 border-ink-900",
     description: "National summit bringing together enterprise AI builders, foundation model researchers, and B2B SaaS founders deploying LLMs in production."
   },
   {
@@ -36,7 +36,7 @@ const startupEvents = [
     month: "Mar",
     category: "Enterprise & Policy",
     accent: "sage",
-    tagBg: "bg-sage-100 text-sage-800 border-sage-200",
+    tagBg: "bg-sage-100 text-sage-900 border-ink-900",
     description: "Strategic leadership forum for enterprise IT leaders, digital transformation architects, and Indian SaaS unicorns expanding into US/EU markets."
   },
   {
@@ -48,7 +48,7 @@ const startupEvents = [
     month: "Mar",
     category: "SaaS & Export",
     accent: "honey",
-    tagBg: "bg-honey-100 text-honey-800 border-honey-200",
+    tagBg: "bg-honey-100 text-honey-900 border-ink-900",
     description: "Global business networking conference hosting international buyers from 60+ countries seeking Indian tech partnerships."
   },
   {
@@ -60,7 +60,7 @@ const startupEvents = [
     month: "May",
     category: "Enterprise Scale",
     accent: "violet",
-    tagBg: "bg-violet-100 text-violet-800 border-violet-200",
+    tagBg: "bg-violet-100 text-violet-900 border-ink-900",
     description: "Dedicated confluence on Global Capability Centers (GCCs), enterprise procurement channels, and deeptech startup integration."
   },
   {
@@ -72,7 +72,7 @@ const startupEvents = [
     month: "May",
     category: "Founders & Angel",
     accent: "blush",
-    tagBg: "bg-blush-100 text-blush-800 border-blush-200",
+    tagBg: "bg-blush-100 text-blush-900 border-ink-900",
     description: "National grassroots venture summit celebrating tier-2/tier-3 founders, manufacturing innovations, and institutional angel networks."
   },
   {
@@ -84,7 +84,7 @@ const startupEvents = [
     month: "Jul",
     category: "Manufacturing & D2C",
     accent: "honey",
-    tagBg: "bg-honey-100 text-honey-800 border-honey-200",
+    tagBg: "bg-honey-100 text-honey-900 border-ink-900",
     description: "India's largest textile and supply-chain expo hosting global apparel brands, sustainable material innovators, and e-commerce tech."
   },
   {
@@ -96,7 +96,7 @@ const startupEvents = [
     month: "Aug",
     category: "Fintech & Banking",
     accent: "sage",
-    tagBg: "bg-sage-100 text-sage-800 border-sage-200",
+    tagBg: "bg-sage-100 text-sage-900 border-ink-900",
     description: "The world's premier fintech ecosystem summit covering payment rails, account aggregators, digital credit protocols, and RBI compliance."
   },
   {
@@ -108,7 +108,7 @@ const startupEvents = [
     month: "Oct",
     category: "5G & Telecom",
     accent: "sky",
-    tagBg: "bg-sky-100 text-sky-800 border-sky-200",
+    tagBg: "bg-sky-100 text-sky-900 border-ink-900",
     description: "Asia's premier digital technology platform hosted by DoT and COAI, showcasing 5G/6G advancements, IoT, and hardware startups."
   },
   {
@@ -120,7 +120,7 @@ const startupEvents = [
     month: "Nov",
     category: "DeepTech & Biotech",
     accent: "violet",
-    tagBg: "bg-violet-100 text-violet-800 border-violet-200",
+    tagBg: "bg-violet-100 text-violet-900 border-ink-900",
     description: "Flagship technology festival bringing together global R&D chiefs, venture capitalists, biotech pioneers, and high-growth engineering founders."
   },
   {
@@ -132,7 +132,7 @@ const startupEvents = [
     month: "Nov",
     category: "B2B Trade & Commerce",
     accent: "honey",
-    tagBg: "bg-honey-100 text-honey-800 border-honey-200",
+    tagBg: "bg-honey-100 text-honey-900 border-ink-900",
     description: "Massive annual international multi-sector trade exhibition hosting enterprise suppliers, government delegations, and consumer brands."
   }
 ];
@@ -160,13 +160,13 @@ export default function EventsCalendar() {
   };
 
   return (
-    <section id="events" className="py-28 px-6 bg-canvas-200/40 relative border-t border-ink-900/[0.06]">
+    <section id="events" className="py-28 px-6 bg-canvas-200 relative border-t-[3px] border-ink-900">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-honey-100 border border-honey-200 text-honey-900 text-xs font-mono font-bold mb-4 shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-honey-100 border-2 border-ink-900 text-honey-900 text-xs font-mono font-bold mb-4">
               <Calendar className="w-3.5 h-3.5 text-honey-700" />
               <span>ECOSYSTEM CALENDAR</span>
             </div>
@@ -188,10 +188,10 @@ export default function EventsCalendar() {
               <button
                 key={m}
                 onClick={() => setSelectedMonth(m)}
-                className={`px-3.5 py-2 rounded-xl text-xs font-mono font-semibold transition-all ${
+                className={`px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all border-2 border-ink-900 ${
                   selectedMonth === m
-                    ? "bg-violet-600 text-white shadow-pastel-sm"
-                    : "bg-white text-ink-600 hover:bg-canvas-100 border border-ink-900/[0.06]"
+                    ? "bg-violet-600 text-white shadow-brutal-sm"
+                    : "bg-white text-ink-700 hover:bg-honey-100"
                 }`}
               >
                 {m === "All" ? "All Months" : m}
@@ -206,7 +206,7 @@ export default function EventsCalendar() {
               placeholder="Search summit, city, category..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 rounded-xl bg-white border border-ink-900/10 text-xs font-sans text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500 shadow-xs"
+              className="w-full pl-10 pr-4 py-2 rounded-xl bg-white border-2 border-ink-900 text-xs font-sans text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500"
             />
           </div>
         </div>
@@ -219,14 +219,14 @@ export default function EventsCalendar() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.04 }}
-              className="glass-card rounded-3xl p-6 border border-ink-900/[0.06] flex flex-col justify-between hover:border-violet-300"
+              transition={{ duration: 0.3, delay: i * 0.03 }}
+              className="glass-card rounded-xl p-6 flex flex-col justify-between"
             >
               <div>
                 {/* Date & Category Bar */}
                 <div className="flex items-center justify-between gap-2 mb-4">
                   <div className="flex items-center gap-2">
-                    <span className="w-9 h-9 rounded-xl bg-violet-100 text-violet-800 font-mono font-extrabold text-xs flex flex-col items-center justify-center leading-none border border-violet-200">
+                    <span className="w-9 h-9 rounded-xl bg-violet-100 text-violet-800 font-mono font-extrabold text-xs flex flex-col items-center justify-center leading-none border-2 border-ink-900">
                       <span>{ev.dates.split(' ')[0]}</span>
                       <span className="text-[9px] uppercase font-bold text-violet-600">{ev.month}</span>
                     </span>
@@ -235,7 +235,7 @@ export default function EventsCalendar() {
                     </span>
                   </div>
 
-                  <span className={`px-2 py-0.5 rounded-md text-[10px] font-mono font-bold border ${ev.tagBg}`}>
+                  <span className={`px-2 py-0.5 rounded-md text-[10px] font-mono font-bold border-2 ${ev.tagBg}`}>
                     {ev.category}
                   </span>
                 </div>
@@ -257,12 +257,12 @@ export default function EventsCalendar() {
               </div>
 
               {/* Action Buttons */}
-              <div className="pt-4 border-t border-ink-900/[0.06] flex items-center gap-3">
+              <div className="pt-4 border-t-2 border-ink-900 flex items-center gap-3">
                 <a
                   href={generateGoogleCalendarUrl(ev)}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex-1 py-2.5 rounded-xl bg-canvas-100 hover:bg-violet-50 hover:text-violet-800 text-ink-700 border border-ink-900/[0.06] text-xs font-mono font-semibold flex items-center justify-center gap-1.5 transition-colors"
+                  className="btn-primary flex-1 py-2.5 rounded-xl bg-canvas-100 hover:bg-violet-50 hover:text-violet-800 text-ink-700 text-xs font-mono font-semibold flex items-center justify-center gap-1.5 transition-colors"
                 >
                   <Plus className="w-3.5 h-3.5 text-violet-600" />
                   <span>Google Calendar</span>
@@ -270,7 +270,7 @@ export default function EventsCalendar() {
 
                 <a
                   href="#apply"
-                  className="px-3.5 py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white text-xs font-mono font-bold flex items-center justify-center gap-1 shadow-xs transition-colors"
+                  className="btn-primary px-3.5 py-2.5 rounded-xl bg-violet-600 text-white text-xs font-mono font-bold flex items-center justify-center gap-1 transition-colors"
                   title="Prepare Pitch Deck for this Summit"
                 >
                   <span>Prep Pitch</span>

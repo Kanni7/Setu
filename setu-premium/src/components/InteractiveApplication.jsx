@@ -40,25 +40,25 @@ export default function InteractiveApplication() {
         particleCount: 100,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ['#B84A3A', '#E07A5F', '#F2C6A0', '#7A332B', '#C9814C']
+        colors: ['#8E0D3C', '#EF3B33', '#FDA1A2', '#1D1842', '#F15C64']
       });
     }, 700);
   };
 
   return (
-    <section id="apply" className="py-28 px-6 bg-canvas-100 relative overflow-hidden border-t border-ink-900/[0.06]">
+    <section id="apply" className="py-28 px-6 bg-canvas-100 relative overflow-hidden border-t-[3px] border-ink-900">
       <div className="max-w-4xl mx-auto relative z-10">
 
         {/* Motivational Banner */}
         <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blush-100 border border-blush-200 text-blush-800 text-xs font-mono font-bold mb-4 shadow-xs">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blush-100 border-2 border-ink-900 text-blush-800 text-xs font-mono font-bold mb-4">
             <Flame className="w-3.5 h-3.5 text-blush-600" />
             <span>COHORT ADMISSIONS PORTAL</span>
           </div>
 
           <h2 className="text-4xl sm:text-6xl font-display font-extrabold text-ink-900 tracking-tight mb-4 leading-tight">
             HAI KEEDA? HAI HIMMAT? <br />
-            <span className="text-violet-600 font-serif italic font-normal">
+            <span className="text-violet-600 font-display font-extrabold">
               TO KAR STARTUP!
             </span>
           </h2>
@@ -69,7 +69,7 @@ export default function InteractiveApplication() {
         </div>
 
         {/* Form Container */}
-        <div className="rounded-3xl bg-white border border-ink-900/[0.08] p-8 sm:p-12 shadow-pastel-lg relative overflow-hidden">
+        <div className="rounded-xl bg-white border-[3px] border-ink-900 p-8 sm:p-12 shadow-brutal-lg relative overflow-hidden">
           <AnimatePresence mode="wait">
             {!submitted ? (
               <motion.form
@@ -91,10 +91,10 @@ export default function InteractiveApplication() {
                         type="button"
                         key={s.id}
                         onClick={() => setStage(s.id)}
-                        className={`p-4 rounded-2xl text-left border transition-all ${
+                        className={`p-4 rounded-xl text-left border-2 transition-colors ${
                           stage === s.id
-                            ? 'bg-violet-50 border-violet-500 text-ink-900 shadow-sm'
-                            : 'bg-canvas-100 border-ink-900/[0.06] text-ink-600 hover:border-ink-900/20'
+                            ? 'bg-violet-50 border-ink-900 text-ink-900 shadow-brutal-sm'
+                            : 'bg-canvas-100 border-ink-900 text-ink-600 hover:bg-honey-50'
                         }`}
                       >
                         <div className="font-display font-bold text-sm text-ink-900">{s.label}</div>
@@ -115,10 +115,10 @@ export default function InteractiveApplication() {
                         type="button"
                         key={t.id}
                         onClick={() => setTrack(t.id)}
-                        className={`p-4 rounded-2xl text-left border transition-all ${
+                        className={`p-4 rounded-xl text-left border-2 transition-colors ${
                           track === t.id
-                            ? 'bg-sage-50 border-sage-500 text-ink-900 shadow-sm'
-                            : 'bg-canvas-100 border-ink-900/[0.06] text-ink-600 hover:border-ink-900/20'
+                            ? 'bg-sage-50 border-ink-900 text-ink-900 shadow-brutal-sm'
+                            : 'bg-canvas-100 border-ink-900 text-ink-600 hover:bg-honey-50'
                         }`}
                       >
                         <div className="font-display font-bold text-sm text-ink-900">{t.label}</div>
@@ -141,7 +141,7 @@ export default function InteractiveApplication() {
                         placeholder="Full Name *"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border border-ink-900/[0.08] text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500 text-sm font-sans transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border-2 border-ink-900 text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-600 text-sm font-sans transition-colors"
                       />
                     </div>
                     <div>
@@ -151,7 +151,7 @@ export default function InteractiveApplication() {
                         placeholder="Email Address *"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border border-ink-900/[0.08] text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500 text-sm font-sans transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border-2 border-ink-900 text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-600 text-sm font-sans transition-colors"
                       />
                     </div>
                     <div>
@@ -161,7 +161,7 @@ export default function InteractiveApplication() {
                         placeholder="Contact Number (WhatsApp) *"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border border-ink-900/[0.08] text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500 text-sm font-sans transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border-2 border-ink-900 text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-600 text-sm font-sans transition-colors"
                       />
                     </div>
                     <div>
@@ -171,7 +171,7 @@ export default function InteractiveApplication() {
                         placeholder="City (e.g. Mumbai, Delhi, Bengaluru) *"
                         value={formData.city}
                         onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border border-ink-900/[0.08] text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500 text-sm font-sans transition-colors"
+                        className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border-2 border-ink-900 text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-600 text-sm font-sans transition-colors"
                       />
                     </div>
                   </div>
@@ -193,10 +193,10 @@ export default function InteractiveApplication() {
                     placeholder="E.g. Building an automated AI compliance and billing tool for Indian hospitals..."
                     value={formData.note}
                     onChange={(e) => setFormData({ ...formData, note: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border border-ink-900/[0.08] text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-500 text-sm font-sans transition-colors resize-none"
+                    className="w-full px-4 py-3.5 rounded-xl bg-canvas-100 border-2 border-ink-900 text-ink-900 placeholder-ink-400 focus:outline-none focus:border-violet-600 text-sm font-sans transition-colors resize-none"
                   />
                   {formData.note.length > 20 && (
-                    <div className="mt-2 p-2.5 rounded-xl bg-sage-50 border border-sage-200 flex items-center justify-between text-xs font-mono text-sage-800">
+                    <div className="mt-2 p-2.5 rounded-xl bg-sage-50 border-2 border-ink-900 flex items-center justify-between text-xs font-mono text-sage-800">
                       <span>✓ Problem Statement Clarity: High</span>
                       <span className="font-bold">Assigned Track: 100-Day Sprint</span>
                     </div>
@@ -207,13 +207,13 @@ export default function InteractiveApplication() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="btn-primary w-full py-4 rounded-2xl font-mono text-xs font-bold uppercase tracking-wider text-white bg-violet-600 hover:bg-violet-700 shadow-pastel-glow-violet transition-all flex items-center justify-center gap-2 active:scale-[0.98]"
+                  className="btn-primary w-full py-4 rounded-xl font-mono text-xs font-bold uppercase tracking-wider text-white bg-violet-600 transition-colors flex items-center justify-center gap-2"
                 >
                   {loading ? (
                     <span>Processing Application...</span>
                   ) : (
                     <>
-                      <Send className="w-4 h-4 text-violet-200" />
+                      <Send className="w-4 h-4 text-white" />
                       <span>Submit Inquiry & Application</span>
                     </>
                   )}
@@ -230,7 +230,7 @@ export default function InteractiveApplication() {
                 animate={{ opacity: 1, scale: 1 }}
                 className="text-center py-12"
               >
-                <div className="w-16 h-16 rounded-full bg-sage-100 border border-sage-300 text-sage-700 mx-auto flex items-center justify-center mb-6">
+                <div className="w-16 h-16 rounded-full bg-sage-100 border-2 border-ink-900 text-sage-700 mx-auto flex items-center justify-center mb-6">
                   <Check className="w-8 h-8" />
                 </div>
                 <h3 className="text-3xl font-display font-extrabold text-ink-900 mb-2">
@@ -241,7 +241,7 @@ export default function InteractiveApplication() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="px-6 py-2.5 rounded-xl font-mono text-xs font-semibold text-ink-600 hover:text-ink-900 bg-canvas-100 border border-ink-900/10"
+                  className="btn-primary px-6 py-2.5 rounded-xl font-mono text-xs font-semibold text-ink-600 hover:text-ink-900 bg-canvas-100 transition-colors"
                 >
                   Submit Another Profile
                 </button>
