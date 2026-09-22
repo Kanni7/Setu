@@ -2,10 +2,26 @@ import type React from "react";
 import { cn } from "@/lib/utils";
 
 const BLOBS = [
-  { backgroundColor: "#FF2E2E", transform: "rotate(0deg)" },
-  { backgroundColor: "#FFC700", transform: "rotate(20deg)" },
-  { backgroundColor: "#00BFDE", transform: "rotate(40deg)" },
-  { backgroundColor: "#FF1E9E", transform: "rotate(60deg)" },
+  {
+    backgroundColor: "#0074D9",
+    backgroundImage: "linear-gradient(#0074D9, #39CCCC, #0074D9)",
+    transform: "rotate(30deg) scale(1.03)",
+  },
+  {
+    backgroundColor: "#FF4136",
+    backgroundImage: "linear-gradient(#FF4136, #FF851B, #FF4136)",
+    transform: "rotate(60deg) scale(0.95)",
+  },
+  {
+    backgroundColor: "#3D9970",
+    backgroundImage: "linear-gradient(#3D9970, #01FF70, #3D9970)",
+    transform: "rotate(90deg) scale(0.97)",
+  },
+  {
+    backgroundColor: "#B10DC9",
+    backgroundImage: "linear-gradient(#B10DC9, #85144B, #B10DC9)",
+    transform: "rotate(120deg) scale(1.02)",
+  },
 ];
 
 export function AnimatedBlobs({
